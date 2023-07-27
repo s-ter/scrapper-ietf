@@ -31,7 +31,7 @@ async fn search_dependencies_loop(dependencies_rfcs: &mut HashMap<String, Vec<St
 
     match dependencies_rfcs.get(rfc_number) {
         Some(dependencies) => {
-            // 'dependencies' is of type '&Vec<String>'
+            
             println!("Dependencies for {}: {:?}", rfc_number, dependencies);
             
             for rfc_related in dependencies.clone() {
